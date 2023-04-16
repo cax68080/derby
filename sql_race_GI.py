@@ -13,12 +13,13 @@ for row in cursor.execute("pragma table_info(N_RACE)"):
 
 # レース情報リスト
 RACEs = []
+
 # SQL文
 strSQL_SELECT = "SELECT * FROM N_RACE"
 strSQL_WHERE = " WHERE DataKubun = '7'"
 strSQL_WHERE += " AND Year = '2022'"
 strSQL_WHERE += " AND GradeCD = 'A'"
-strSQL_ORDER = " ORDER BY JyoCD DESC,MonthDay ASC"
+strSQL_ORDER = " ORDER BY MonthDay ASC,JyoCD DESC"
 # SQL文の連結
 strSQL = strSQL_SELECT + strSQL_WHERE + strSQL_ORDER
 # SQL文の実行

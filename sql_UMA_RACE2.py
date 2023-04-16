@@ -18,6 +18,7 @@ strSQL_SELECT = "SELECT * FROM N_UMA_RACE"
 strSQL_WHERE = " WHERE DataKubun = '7'"
 strSQL_WHERE += " AND Year = '2022'"
 strSQL_WHERE += " AND MonthDay = '1224'"
+
 strSQL_WHERE += " AND JyoCD = '06'"
 strSQL_WHERE += " AND RaceNum = '11'"
 strSQL_ORDER = " ORDER BY Umaban ASC"

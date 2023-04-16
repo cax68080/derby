@@ -13,7 +13,7 @@ for row in cursor.execute("pragma table_info(N_RACE)"):
 # レース情報リスト
 RACEs = []
 # SQL文
-strSQL = "SELECT * FROM N_RACE WHERE JyoCD = '01' AND Year = '2022'"
+strSQL = "SELECT * FROM N_RACE WHERE JyoCD = '09' AND Year = '2022'"
 # SQL文の実行
 results = cursor.execute(strSQL)
 # 辞書型
