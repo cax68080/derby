@@ -5,7 +5,7 @@ f_in = open("./CodeTable.csv")
 # コード表リストの生成
 for line in f_in.readlines():
     values = line.split(",")
-    print(values)
+    #print(values)
     CodeTable.append(values)
 # ファイルクローズ
 f_in.close()
@@ -14,5 +14,5 @@ def getCodeValue(code,key,type):
     for c in CodeTable:
         if(c[0] == code and c[1] == key): return c[type + 1]
 # 実行結果の確認
-value = getCodeValue("2001","01",1)
-print(value)
+#value = getCodeValue("2001","01",1)
+#print(value)
